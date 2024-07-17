@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity2"
+    android:background="#FFAFCC">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvKalkulator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="Kalkulator Ku"
+            android:textColor="@color/black"
+            android:textSize="38sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvNilaia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvKalkulator"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="Nilai A"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvNilaib"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvNilaia"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="Nilai B"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etNilaia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvKalkulator"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_toEndOf="@+id/tvNilaia"
+            android:hint="Silahkan Masukkan Nilai A"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/etNilaib"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etNilaia"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_toEndOf="@+id/tvNilaia"
+            android:hint="Silahkan Masukkan Nilai B"
+            android:inputType="number" />
+
+        <RadioGroup
+            android:id="@+id/rbOperasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvNilaib"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp">
+
+            <RadioButton
+                android:id="@+id/rbTambah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tambah"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/rbKurang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kurang"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/rbKali"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kali"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/rbBagi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bagi"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btn_hitung"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rbOperasi"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Hitung"
+            android:textSize="25dp"
+            android:background="#A2D2FF"/>
+
+        <TextView
+            android:id="@+id/tvhasil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_hitung"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Hasil :"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvhsl_hitung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_hitung"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toEndOf="@+id/tvhasil"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btBiodata"
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#A2D2FF"
+        android:baselineAligned="false"
+        android:text="BiodataKelompok" />
+
+
+</LinearLayout>
